@@ -39,7 +39,7 @@ public class InventoryProgram {
 					int amount = scan.nextInt();
 					
 					Grocery grocery = new Grocery (list.get(stockItem-1), price, amount);
-//					int oldPrice = list.get(stockItem-1).getCost();
+//			    int oldPrice = list.get(stockItem-1).getCost();
 //		            if (amount < oldPrice){
 //		            	System.out.println("Warning, sale price is lower than product cost");
 //		            }
@@ -64,29 +64,27 @@ public class InventoryProgram {
 					
 					break;	
 				
-				case "sp":
-					int product = scan.nextInt();
-					int sellingAmount = scan.nextInt();
-					int sellingPrice = scan.nextInt();
-                    boolean x = true;
-					for(int i =1; i<list2.size();i++) {
-						
-						
-					if(product==list2.get(i).getProduct().getProductNo() && sellingPrice==list2.get(i).getAmount()) {	
-						x = false;
-						if((list2.get(i).getPrice()) < sellingAmount) {	
-							System.out.println("There are not enough products. Amount of the product in the stock: " + (list2.get(i).getPrice()));
-						}
-
-						else {
-							System.out.println("Remaining Stock = "+list2.get(i).getProduct().toString()+", selling at "+list2.get(i).getAmount()+"$ with "+(list2.get(i).getPrice()-sellingAmount)+" left");
-						}
-					}
-					if(x==true) {
-						System.out.println("There is no such product selling at "+sellingPrice+"$. Please try again with correct price.");
-					}
-					}
-					break;
+//				case "sp":
+//					int product = scan.nextInt();
+//					int sellingAmount = scan.nextInt();
+//					int sellingPrice = scan.nextInt();
+//                   			boolean x = true;
+//					for(int i =1; i<list2.size();i++) {	
+//					if(product==list2.get(i).getProduct().getProductNo() && sellingPrice==list2.get(i).getAmount()) {	
+//						x = false;
+//						if((list2.get(i).getPrice()) < sellingAmount) {	
+//							System.out.println("There are not enough products. Amount of the product in the stock: " + (list2.get(i).getPrice()));
+//						}
+//
+//						else {
+//							System.out.println("Remaining Stock = "+list2.get(i).getProduct().toString()+", selling at "+list2.get(i).getAmount()+"$ with "+(list2.get(i).getPrice()-sellingAmount)+" left");
+//						}
+//					}
+//					if(x==true) {
+//						System.out.println("There is no such product selling at "+sellingPrice+"$. Please try again with correct price.");
+//					}
+//					}
+//					break;
 					
 			}
 			command = scan.next();
