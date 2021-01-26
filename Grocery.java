@@ -1,4 +1,3 @@
-
 public class Grocery implements StockInterface {
 	
 	private Product product;
@@ -42,27 +41,16 @@ public class Grocery implements StockInterface {
 
 	@Override
 	public void setStockAmount(int newAmount) {
-		// TODO Auto-generated method stub
-		
 	}
-
 	@Override
 	public void setStockPrice(int newPrice) {
-		// TODO Auto-generated method stub
-		
 	}
-
 	@Override
 	public int getStockAmount() {
-		// TODO Auto-generated method stub
 		return 0;
 	}
-
 	@Override
 	public int getStockPrice() {
-		// TODO Auto-generated method stub
 		return 0;
 	}
-	
-
 }
